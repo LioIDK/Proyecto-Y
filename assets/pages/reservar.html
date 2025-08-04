@@ -1,0 +1,107 @@
+ <!DOCTYPE html>
+ <html lang="es-ar">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Y - Reservar</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+ <body>
+    <header>
+        <a href="../../index.html">
+            <img src="../img/Logo del proyecto.png" alt="Logo" title="Logo del Proyecto Y" class="logo">        
+        </a>
+        <!-- El logo es un enlace que redirige a la página principal del proyecto -->
+
+        <h1>Proyecto Y</h1> <!--h1 solamente se utiliza uno solo por archivo HTML-->
+        <!-- h2 a h6 no se pueden saltear, deben estar en orden y ser usados -->
+        
+        <nav>
+            <ul class="social-links">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../img/Facebook.png" alt="Facebook"
+                        class="redes">
+                    </a>
+                </li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../img/Instagram.png" alt="Instagram"
+                        class="redes">
+                    </a>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="../img/Twitter.png" alt="Twitter"
+                        class="redes">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/es/" target="_blank">
+                        <img src="../img/Tiktok.png" alt="Tiktok"
+                        class="redes">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flex-main"> 
+        <!-- Esta contiene el contenido principal de mi página -->
+        <nav>
+            <ul class="pages-links">
+                <li class="nav-bar">
+                    <a href="./galeria.html">Galería</a>
+                </li>
+                <li class="nav-bar">
+                    <a href="./sobre-nosotros.html">Sobre Nosotros</a>
+                </li>                
+                <li class="nav-bar">
+                    <a href="./tienda.html">Bebidas</a>
+                </li>
+                <li class="nav-bar">
+                    <a href="./reservar.html">Reservar</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="reserva-main">
+            <section>
+                <h2 class="subtitle">Proceso de Reservación en Dos Pasos</h2>
+                <ul class="reserva-pasos">
+                    <li>
+                        <p class="relleno">Regístrate: Crea una cuenta en nuestra página web proporcionando tu nombre y correo electrónico. Esto nos permitirá registrar tu solicitud y mantener un seguimiento de tu reserva.</p>
+                    </li>
+                    <li>
+                        <p class="relleno">Contáctanos por Email: Una vez registrado, envíanos un correo electrónico para formalizar tu reserva. Por este medio, podrás comunicarnos los detalles específicos que necesitas y te confirmaremos la disponibilidad.</p>
+                    </li>
+                </ul>
+            </section>
+            <form>
+                <label>Nombre y Apellido</label>
+                <input type="text" name="nombre" placeholder="Nombre Apellido" required>
+                <br>
+                <label>Edad</label>
+                <input type="number" name="edad" placeholder="18" required>
+                <br>
+                <label>Correo Electrónico</label>
+                <input type="email" name="correo" placeholder="ejemplo@gmail.com" required>
+                <br>
+                <label>Fecha de nacimiento</label>            
+                <input type="date" name="fecha_nacimiento" required>
+                <br>
+                <Label>Contraseña</Label>
+                <input type="password">
+                <br>
+                <label>Repetir Contraseña</label>
+                <input type="password">
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>           
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <h4 id="id" class="relleno">©Derechos reservados</h2>
+    </footer>
+
+</body>
+ </html>
