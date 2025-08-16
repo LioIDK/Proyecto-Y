@@ -1,0 +1,86 @@
+@use "variables" as v;
+
+.flex-main {
+    .galeria-main {
+        display: flex;
+        height: auto;
+        width: 84vw;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: top;
+        padding: 20px 0px;
+        gap: 20px;
+        .galeria-text {
+            display: flex;
+            flex-flow: column wrap;
+            width: 80vw;
+            height: 20vh;
+            justify-content: center;
+            gap: 50px;
+        }
+        .images {
+            display: grid;
+            height: auto;
+            width: 84vw;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 20vh 20vh 40vh;
+            gap: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+            .photo-a {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+            .photo-b {
+                grid-column: 2 / 4;
+                grid-row: 1 / 3;
+            }
+            .photo-c {
+                grid-column: 1 / 4;
+                grid-row: 3 / 4;
+            }
+            .photo-d {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+        }
+        @include v.mobile{
+            width: 90vw;
+            height: auto;
+            align-self: center;
+            .galeria-text {
+                width: 90vw;
+                height: auto;
+                align-self: center;
+                padding: 10px;
+                gap: 10px;
+            }
+            .images {
+                width: 90vw;
+                height: auto;
+                grid-template-columns: 90vw;
+                grid-template-rows: 25vh 25vh 25vh 25vh;
+                .photo-a {
+                grid-column: 1;
+                grid-row: 1 / 2;
+                }
+                .photo-c {
+                    grid-column: 1;
+                    grid-row: 2 / 3;
+                }
+                .photo-b {
+                    grid-column: 1;
+                    grid-row: 3 / 4;
+                }
+                .photo-d {
+                    grid-column: 1;
+                    grid-row: 4 / 5;
+                }
+            }
+        }
+    }
+}

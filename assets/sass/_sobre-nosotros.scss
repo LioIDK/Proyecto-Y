@@ -1,0 +1,35 @@
+@use "variables" as v;
+
+.sobre-nosotros-main {
+    display: flex;
+    height: auto;
+    width: 84vw;
+    flex-flow: row-reverse nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0px;
+    gap: 20px;
+    .sobre-nosotros-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: flex-start;
+        width: 84vw;
+        height: 60vh;
+        gap: 5vh;
+    }
+    .sobre-nosotros-img {
+        display: flex;
+        height: auto;
+        width: 40vw;
+        border-radius: 10px;
+    }
+    @include v.mobile{
+        width: 100%;
+        flex-flow: column-reverse;
+        .sobre-nosotros-img, .sobre-nosotros-text {
+            width: 90vw;
+            margin: 0vw 5vw 3vw 5vw;
+        }
+    }
+}

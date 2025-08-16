@@ -1,0 +1,33 @@
+@use "variables" as v;
+
+
+.reserva-main { 
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        width: 84vw;
+        gap: 5vh;
+    .reserva-pasos {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        width: 30vw;
+        height: 38vh;
+        margin: 2vw;
+    }
+    @include v.mobile{
+        width: 90vw;
+        margin: 0 5vw 0 5vw;
+        height: auto;
+        form {
+            width: 50vw;
+            height: auto;
+        }
+    }
+}

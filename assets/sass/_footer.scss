@@ -1,0 +1,14 @@
+@use "variables" as v;
+
+footer{
+    #id{
+        text-align: right;
+        height: auto;
+        width: 100%;
+        color: black;
+        font-size: 1rem;
+        font-family: v.$fuente;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+}

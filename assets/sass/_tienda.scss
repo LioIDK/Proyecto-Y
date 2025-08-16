@@ -1,0 +1,58 @@
+@use "variables" as v;
+
+.tienda-main {
+    display: flex;
+    height: auto;
+    width: 84vw;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 20px;
+    .tienda-text {
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+    .tienda-img {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(250px, 1fr));
+        gap: 1vw;
+        section {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            text-align: center;
+            .precios {
+                order: 1;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                color: #e91e63;
+            }
+            img {
+                order: 2;
+            }
+            .ingredientes {
+                order: 3;
+                margin-top: 0.5rem;
+                color: #f2f2f2;
+            }
+        }
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+    @include v.mobile{
+        width: 90vw;
+        margin: 0 5vw 0 5vw;
+        .tienda-img {
+            justify-content: center;
+            grid-template-columns: 88vw;
+            section {
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
