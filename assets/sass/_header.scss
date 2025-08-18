@@ -1,9 +1,10 @@
 @use "variables" as v;
+@use "animaciones";
 
 header {
     display: flex;
     background-color: v.$colorSecundario;
-    width: 98vw;
+    width: 100%;
     height: 18vh;
     position: sticky;
     top: 0;
@@ -15,6 +16,9 @@ header {
     .logo{
         width: 8vw;
         height: auto;
+        &:hover{
+            @extend %rotation
+        }
     }
     h1 {
         justify-self: center;
@@ -35,6 +39,9 @@ header {
         .redes {
             width: 2vw;
             height: auto;
+            &:hover{
+                @extend %scaleUp
+            }
         }
     }
     @include v.mobile{

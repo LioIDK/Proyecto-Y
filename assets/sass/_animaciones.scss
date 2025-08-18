@@ -1,0 +1,25 @@
+@keyframes scale {
+    from{
+        scale: 1;
+    }
+    to{
+        scale: 1.3;
+    }
+}
+
+%scaleUp{
+    animation: scale 0.5s forwards ease-in-out;
+}
+
+@keyframes inicio {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+}
+
+%rotation{
+    animation: inicio 1s forwards ease;
+}
